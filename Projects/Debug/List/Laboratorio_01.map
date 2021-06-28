@@ -1,22 +1,19 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.2.313/W64 for ARM                  27/Jun/2021  21:51:58
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  28/Jun/2021  16:41:01
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
-#        D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Exe\Laboratorio_01.out
+#        D:\Pietro\Micro\ELF52\Projects\Debug\Exe\Laboratorio_01.out
 #    Map file     =
-#        D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\List\Laboratorio_01.map
+#        D:\Pietro\Micro\ELF52\Projects\Debug\List\Laboratorio_01.map
 #    Command line =
-#        -f
-#        D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Exe\Laboratorio_01.out.rsp
-#        (D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Obj\asm.o
-#        --no_out_extension -o
-#        D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Exe\Laboratorio_01.out
-#        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
-#        --map
-#        D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\List\Laboratorio_01.map
-#        --config "D:\Program Files\IAR Systems\Embedded Workbench
+#        -f D:\Pietro\Micro\ELF52\Projects\Debug\Exe\Laboratorio_01.out.rsp
+#        (D:\Pietro\Micro\ELF52\Projects\Debug\Obj\asm.o --no_out_extension -o
+#        D:\Pietro\Micro\ELF52\Projects\Debug\Exe\Laboratorio_01.out --redirect
+#        _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb --map
+#        D:\Pietro\Micro\ELF52\Projects\Debug\List\Laboratorio_01.map --config
+#        "D:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\CONFIG\generic_cortex.icf" --semihosting --no_library_search
 #        --entry __iar_program_start --vfe --text_out locale)
 #
@@ -74,7 +71,7 @@ command line/config:
     --------------------------------
     Total:
 
-D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Obj: [1]
+D:\Pietro\Micro\ELF52\Projects\Debug\Obj: [1]
     asm.o               114
     --------------------------------
     Total:              114
@@ -96,7 +93,7 @@ __iar_program_start         0x41        Code  Gb  asm.o [1]
 __vector_table               0x0        Data  Gb  asm.o [1]
 
 
-[1] = D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\Debug\Obj
+[1] = D:\Pietro\Micro\ELF52\Projects\Debug\Obj
 
     114 bytes of readonly  code memory
   1'024 bytes of readwrite data memory

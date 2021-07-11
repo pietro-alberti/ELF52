@@ -1201,7 +1201,7 @@
                 <debug>1</debug>
                 <option>
                     <name>CThirdPartyDriverDll</name>
-                    <state>Browse to your third-party driver</state>
+                    <state>###Uninitialized###</state>
                 </option>
                 <option>
                     <name>CThirdPartyLogFileCheck</name>
@@ -1247,7 +1247,7 @@
                 </option>
                 <option>
                     <name>CCMSPFetTargetVoltage</name>
-                    <state>3.0</state>
+                    <state>###Uninitialized###</state>
                 </option>
                 <option>
                     <name>CCMSPFetVCCDefault</name>
@@ -1305,11 +1305,11 @@
                 </option>
                 <option>
                     <name>TIPackage</name>
-                    <state>C:\ti\iar\ccs_base</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>BoardFile</name>
-                    <state>$TOOLKIT_DIR$\config\debugger\TexasInstruments\xds\UNKNOWN_XDS110_CJTAG.dat</state>
+                    <state></state>
                 </option>
                 <option>
                     <name>DoLogfile</name>
@@ -1460,7 +1460,7 @@
                 </option>
                 <option>
                     <name>CCXDSTargetVoltage</name>
-                    <state>3.3</state>
+                    <state>###Uninitialized###</state>
                 </option>
                 <option>
                     <name>OCXDSDigitalStatesConfigFile</name>

@@ -1,3 +1,25 @@
 # ninja log v5
 0	506	6465285117461652	D:/Pietro/Micro/TM4C1294_SM_IAR9/Projects/asm_example/Debug/Obj/asm.o	1b65aef1e5abf6ba
 509	1626	6465285127962437	D:/Pietro/Micro/TM4C1294_SM_IAR9/Projects/asm_example/Debug/Exe/asm_example.out	f6b7abdb5ef6f976
+1	1018	6479088400225806	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+1023	2590	6479088415866976	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	34	6479089109089732	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+40	150	6479089110182360	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+2	46	6479089739022705	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+53	129	6479089739822769	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	24	6479090226188441	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+28	107	6479090226978520	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	21	6479090743769007	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+24	102	6479090744527926	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	21	6479093096875022	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+24	85	6479093097475048	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	24	6479094339283492	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+28	105	6479094340063542	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	24	6479097460907474	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+27	111	6479097461727393	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	31	6479098303737292	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+34	108	6479098304487351	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	24	6479099066817738	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+27	109	6479099067627823	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631
+1	21	6479099758911536	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Obj/asm.o	d08d402fb88ecf47
+24	94	6479099759611736	D:/Pietro/Micro/ELF52/Projects/asm_example/Debug/Exe/asm_example.out	3ec834328b02d631

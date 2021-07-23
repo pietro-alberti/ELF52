@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\settings\asm_example.Debug.general.xcl" --backend -f "D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\settings\asm_example.Debug.driver.xcl" 
+& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Pietro\Micro\ELF52\Projects\asm_example\settings\asm_example.Debug.general.xcl" --backend -f "D:\Pietro\Micro\ELF52\Projects\asm_example\settings\asm_example.Debug.driver.xcl" 
 }
 else
 {
-& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\settings\asm_example.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\settings\asm_example.Debug.driver.xcl" 
+& "D:\Program Files\IAR Systems\Embedded Workbench 9.0\common\bin\cspybat" -f "D:\Pietro\Micro\ELF52\Projects\asm_example\settings\asm_example.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Pietro\Micro\ELF52\Projects\asm_example\settings\asm_example.Debug.driver.xcl" 
 }

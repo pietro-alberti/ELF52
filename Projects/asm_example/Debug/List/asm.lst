@@ -1,17 +1,17 @@
 ###############################################################################
 #                                                                             #
-#     IAR Assembler V9.10.2.313/W64 for ARM 27/Jun/2021  17:21:51             #
+#     IAR Assembler V9.10.2.313/W64 for ARM 13/Jul/2021  17:06:15             #
 #     Copyright 1999-2021 IAR Systems AB.                                     #
 #                                                                             #
-#           Source file   =  D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\src\asm.s#
-#           List file     =  D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\Debug\List\asm.lst#
-#           Object file   =  D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\Debug\Obj\asm.o#
+#           Source file   =  D:\Pietro\Micro\ELF52\Projects\asm_example\src\asm.s#
+#           List file     =  D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\List\asm.lst#
+#           Object file   =  D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj\asm.o#
 #           Command line  =  -f                                               #
-#                            D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\Debug\Obj\asm.o.rsp #
-#                            (D:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\src\asm.s #
-#                            -OD:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\Debug\Obj\ #
+#                            D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj\asm.o.rsp #
+#                            (D:\Pietro\Micro\ELF52\Projects\asm_example\src\asm.s #
+#                            -OD:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj\ #
 #                            -s+ -M<> -w+ -r                                  #
-#                            -LD:\Pietro\Micro\TM4C1294_SM_IAR9\Projects\asm_example\Debug\List\ #
+#                            -LD:\Pietro\Micro\ELF52\Projects\asm_example\Debug\List\ #
 #                            -t8 --cpu Cortex-M4 --fpu None)                  #
 #                                                                             #
 ###############################################################################
@@ -30,83 +30,81 @@
    11                           __iar_program_start
    12                                   
    13                                   ;; main program begins here
-   14    00000000 4FF00100      main    MOV R0, #0x01           ; r0 :=
-                                                                 0x01
-   15    00000004 00F10300      loop    ADD R0, R0, #0x03       ; r0 := r0 +
-                                                                 0x03
-   16    00000008 00F00F00              AND R0, R0, #0x0F       ; r0 := ro &&
-                                                                 0x0f (bitwise
-                                                                 and)
-   17    0000000C FAE7                  B       loop            ; go to
-                                                                 loop
-   18                                   ;; main program ends here
-   19                           
-   20                                   ;; Forward declaration of sections.
-   21                                   SECTION CSTACK:DATA:NOROOT(3)
-   22                                   SECTION .intvec:CODE:NOROOT(2)
-   23                                   
-   24                                   DATA
-   25                           
-   26                           __vector_table
-   27    00000000 ........              DCD     sfe(CSTACK)
-   28    00000004 ........              DCD     __iar_program_start
-   29                           
-   30    00000008 ........              DCD     NMI_Handler
-   31    0000000C ........              DCD     HardFault_Handler
-   32    00000010 ........              DCD     MemManage_Handler
-   33    00000014 ........              DCD     BusFault_Handler
-   34    00000018 ........              DCD     UsageFault_Handler
-   35    0000001C 00000000              DCD     0
-   36    00000020 00000000              DCD     0
-   37    00000024 00000000              DCD     0
-   38    00000028 00000000              DCD     0
-   39    0000002C ........              DCD     SVC_Handler
-   40    00000030 ........              DCD     DebugMon_Handler
-   41    00000034 00000000              DCD     0
-   42    00000038 ........              DCD     PendSV_Handler
-   43    0000003C ........              DCD     SysTick_Handler
-   44                           
-   45                           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+   14                           main    
+   15    00000000 6FF00900             MOV R0, #-10
+   16    00000004 6FF00901             MOV R1, #-10
+   17    00000008 8842          modsub CMP R0, R1
+   18    0000000A ACBF                 ITE GE
+   19    0000000C 401A                    SUBGE R0, R0, R1 
+   20    0000000E C0EB0100                RSBLT R0, R0, R1
+   21    00000012 7047                 BX LR
+   22                                   
+   23                                   ;; Forward declaration of sections.
+   24                                   SECTION CSTACK:DATA:NOROOT(3)
+   25                                   SECTION .intvec:CODE:NOROOT(2)
+   26                                   
+   27                                   DATA
+   28                           
+   29                           __vector_table
+   30    00000000 ........              DCD     sfe(CSTACK)
+   31    00000004 ........              DCD     __iar_program_start
+   32                           
+   33    00000008 ........              DCD     NMI_Handler
+   34    0000000C ........              DCD     HardFault_Handler
+   35    00000010 ........              DCD     MemManage_Handler
+   36    00000014 ........              DCD     BusFault_Handler
+   37    00000018 ........              DCD     UsageFault_Handler
+   38    0000001C 00000000              DCD     0
+   39    00000020 00000000              DCD     0
+   40    00000024 00000000              DCD     0
+   41    00000028 00000000              DCD     0
+   42    0000002C ........              DCD     SVC_Handler
+   43    00000030 ........              DCD     DebugMon_Handler
+   44    00000034 00000000              DCD     0
+   45    00000038 ........              DCD     PendSV_Handler
+   46    0000003C ........              DCD     SysTick_Handler
+   47                           
+   48                           ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
                                 ;;;;;;
-   46                           ;;
-   47                           ;; Default interrupt handlers.
-   48                           ;;
-   49                           
-   50                                   PUBWEAK NMI_Handler
-   51                                   PUBWEAK HardFault_Handler
-   52                                   PUBWEAK MemManage_Handler
-   53                                   PUBWEAK BusFault_Handler
-   54                                   PUBWEAK UsageFault_Handler
-   55                                   PUBWEAK SVC_Handler
-   56                                   PUBWEAK DebugMon_Handler
-   57                                   PUBWEAK PendSV_Handler
-   58                                   PUBWEAK SysTick_Handler
-   59                           
-   60                                   SECTION .text:CODE:REORDER:NOROOT(1)
-   61                                   THUMB
+   49                           ;;
+   50                           ;; Default interrupt handlers.
+   51                           ;;
+   52                           
+   53                                   PUBWEAK NMI_Handler
+   54                                   PUBWEAK HardFault_Handler
+   55                                   PUBWEAK MemManage_Handler
+   56                                   PUBWEAK BusFault_Handler
+   57                                   PUBWEAK UsageFault_Handler
+   58                                   PUBWEAK SVC_Handler
+   59                                   PUBWEAK DebugMon_Handler
+   60                                   PUBWEAK PendSV_Handler
+   61                                   PUBWEAK SysTick_Handler
    62                           
-   63                           NMI_Handler
-   64                           HardFault_Handler
-   65                           MemManage_Handler
-   66                           BusFault_Handler
-   67                           UsageFault_Handler
-   68                           SVC_Handler
-   69                           DebugMon_Handler
-   70                           PendSV_Handler
-   71                           SysTick_Handler
-   72                           Default_Handler
-   73                           __default_handler
-   74                                   CALL_GRAPH_ROOT __default_handler,
+   63                                   SECTION .text:CODE:REORDER:NOROOT(1)
+   64                                   THUMB
+   65                           
+   66                           NMI_Handler
+   67                           HardFault_Handler
+   68                           MemManage_Handler
+   69                           BusFault_Handler
+   70                           UsageFault_Handler
+   71                           SVC_Handler
+   72                           DebugMon_Handler
+   73                           PendSV_Handler
+   74                           SysTick_Handler
+   75                           Default_Handler
+   76                           __default_handler
+   77                                   CALL_GRAPH_ROOT __default_handler,
                                  "interrupt"
-   75                                   NOCALL __default_handler
-   76    00000000 FEE7                  B __default_handler
-   77                           
-   78                                   END
+   78                                   NOCALL __default_handler
+   79    00000000 FEE7                  B __default_handler
+   80                           
+   81                                   END
 ##############################
 #           CRC:0            #
 #        Errors:   0         #
 #        Warnings: 0         #
-#         Bytes: 80          #
+#         Bytes: 86          #
 ##############################
 
 

@@ -1,0 +1,15 @@
+# ninja log v5
+0	1573	6486944118884471	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	2da6d1344731f64a
+1575	3394	6486944136495773	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	9e727d4b6bb130b1
+1	37	6486953067422546	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	2da6d1344731f64a
+39	115	6486953068162618	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	9e727d4b6bb130b1
+1	421	6487009943819819	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	2da6d1344731f64a
+426	814	6487009947710096	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	9e727d4b6bb130b1
+1	36	6487017842535851	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	a2e288f5fe28508e
+39	180	6487017843935954	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	a77ef4c489fbbe6d
+44	80	6487028335595152	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	a2e288f5fe28508e
+83	133	6487028336095184	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	a77ef4c489fbbe6d
+2	20	6487029113346166	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	a2e288f5fe28508e
+22	64	6487029113736201	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	a77ef4c489fbbe6d
+1	23	6487071460547250	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Obj/asm.o	a2e288f5fe28508e
+25	70	6487071460983503	D:/Pietro/Micro/ELF52/Projects/Exerc_17/Debug/Exe/Exerc_17.out	a77ef4c489fbbe6d

@@ -1,0 +1,18 @@
+# ninja log v5
+2	483	6492216654738858	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/startup_TM4C1294.o	54bada69fe11a693
+1	35	6492217424082505	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	f56210527bf38654
+1	32	6492219174182681	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	f56210527bf38654
+34	95	6492219174752848	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	335fb1f4cc5801ea
+8	50	6492221547967050	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+1	63	6492221548027110	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/startup_TM4C1294.o	6b23e1dd19b755ca
+66	204	6492221549447186	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3
+79	565	6492864520146169	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+568	1081	6492864525276618	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3
+1	20	6492866956994121	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+22	63	6492866957384143	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3
+1	19	6492867600565959	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+21	63	6492867600956004	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3
+1	21	6492869511470157	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+23	126	6492869512480243	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3
+1	19	6492871372642694	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Obj/asm.o	8a4c193500484cf6
+21	62	6492871373022722	D:/Pietro/Micro/ELF52/Projects/Exerc_20/Debug/Exe/Exerc_20.out	eaab3619df4a89c3

@@ -369,7 +369,7 @@ Button1_int_clear:
         BX LR
         
 
-UART_resp:                       ;; Envia Letra por letra na URAT
+UART_resp:                       ;; Envia Letra por letra na UART
       
        CMP R1, #0x0D              ; Verifica se R1 é igual a '/r'
        BNE respFim 

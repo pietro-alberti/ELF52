@@ -1,0 +1,7 @@
+# ninja log v5
+1	418	6503350883029538	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Obj/asm.o	ec6de4e3e831fe36
+0	24	6503351128957464	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Obj/asm.o	ec6de4e3e831fe36
+2	1604	6503352610596266	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Obj/startup_TM4C1294.o	10b931e941e78a6f
+1608	1665	6503352611186296	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Exe/Ex21_UART.out	14f920f833259c23
+1	22	6503360127799728	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Obj/asm.o	ec6de4e3e831fe36
+25	68	6503360128219731	D:/Pietro/Micro/ELF52/Projects/Ex21_UART/Debug/Exe/Ex21_UART.out	14f920f833259c23

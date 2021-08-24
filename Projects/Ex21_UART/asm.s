@@ -121,14 +121,14 @@ UART_config:
         BIC R1, #0x01 ; desabilita UART (bit UARTEN = 0)
         STR R1, [R0, #UART_CTL]
 
-        ; clock = 16MHz, baud rate = 9600 bps
-        MOV R1, #104
+        ; clock = 16MHz, baud rate = 300 bps
+        MOV R1, #3333
         STR R1, [R0, #UART_IBRD]
-        MOV R1, #11
+        MOV R1, #22
         STR R1, [R0, #UART_FBRD]
         
-        ; 8 bits, 1 stop, no parity, FIFOs disabled, no interrupts
-        MOV R1, #0x60
+        ; 8 bits, 2 stop, even parity, FIFOs disabled, no interrupts
+        MOV R1, #0x6E ;01101110b 
         STR R1, [R0, #UART_LCRH]
         
         ; clock source = system clock

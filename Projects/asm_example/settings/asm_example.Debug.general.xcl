@@ -1,10 +1,14 @@
 "D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armPROC.dll" 
 
-"D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armSIM2.dll" 
+"D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armLMIFTDI.dll" 
 
 "D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Exe\asm_example.out" 
 
 --plugin="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
+
+--device_macro="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\TexasInstruments\TM4C129.dmac" 
+
+--flash_loader="D:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\flashloader\TexasInstruments\FlashTC4_NC.board" 
 
 
 

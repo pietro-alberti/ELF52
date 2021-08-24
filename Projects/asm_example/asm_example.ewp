@@ -48,7 +48,7 @@
                 </option>
                 <option>
                     <name>OGCoreOrChip</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>GRuntimeLibSelect</name>
@@ -70,11 +70,11 @@
                 </option>
                 <option>
                     <name>OGLastSavedByProductVersion</name>
-                    <state>8.50.9.33458</state>
+                    <state>9.10.2.39304</state>
                 </option>
                 <option>
                     <name>OGChipSelectEditMenu</name>
-                    <state>Default	None</state>
+                    <state>TM4C1294NCPDT	TexasInstruments TM4C1294NCPDT</state>
                 </option>
                 <option>
                     <name>GenLowLevelInterface</name>
@@ -120,17 +120,17 @@
                 </option>
                 <option>
                     <name>GFPUDeviceSlave</name>
-                    <state>Default	None</state>
+                    <state>TM4C1294NCPDT	TexasInstruments TM4C1294NCPDT</state>
                 </option>
                 <option>
                     <name>FPU2</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>4</state>
                 </option>
                 <option>
                     <name>NrRegs</name>
                     <version>0</version>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>NEON</name>
@@ -2087,5 +2087,8 @@
     </configuration>
     <file>
         <name>$PROJ_DIR$\src\asm.s</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\..\uart2\src\startup_TM4C1294.s</name>
     </file>
 </project>

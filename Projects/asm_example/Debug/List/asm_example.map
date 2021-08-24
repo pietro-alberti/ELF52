@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.2.313/W64 for ARM                  13/Jul/2021  17:06:15
+# IAR ELF Linker V9.10.2.313/W64 for ARM                  12/Aug/2021  18:30:09
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -11,14 +11,16 @@
 #        -f
 #        D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Exe\asm_example.out.rsp
 #        (D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj\asm.o
+#        D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj\startup_TM4C1294.o
 #        --no_out_extension -o
 #        D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Exe\asm_example.out
 #        --redirect _Printf=_PrintfFullNoMb --redirect _Scanf=_ScanfFullNoMb
 #        --map
 #        D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\List\asm_example.map
 #        --config "D:\Program Files\IAR Systems\Embedded Workbench
-#        9.0\arm\CONFIG\generic_cortex.icf" --semihosting --entry
-#        __iar_program_start --no_exceptions --no_vfe --text_out locale)
+#        9.0\arm\config\linker\TexasInstruments\TM4C1294NC.icf" --semihosting
+#        --entry __iar_program_start --no_exceptions --no_vfe --text_out
+#        locale)
 #
 ###############################################################################
 
@@ -36,40 +38,39 @@ functions.
 ***
 
 "A0":  place at address 0x0 { ro section .intvec };
-"P1":  place in [from 0x0 to 0x7'ffff] { ro };
-define block CSTACK with size = 1K, alignment = 8 { };
-define block PROC_STACK with size = 0, alignment = 8 { };
-define block HEAP with size = 2K, alignment = 8 { };
-"P2":  place in [from 0x2000'0000 to 0x2000'ffff] {
-          rw, block CSTACK, block PROC_STACK, block HEAP };
+"P1":  place in [from 0x0 to 0xf'ffff] { ro };
+define block CSTACK with size = 32K, alignment = 8 { };
+define block HEAP with size = 64K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2003'ffff] {
+          rw, block CSTACK, block HEAP };
 
 No sections matched the following patterns:
 
   rw  in "P2"
 
 
-  Section   Kind         Address   Size  Object
-  -------   ----         -------   ----  ------
-"A0":                              0x40
-  .intvec   ro code          0x0   0x40  asm.o [1]
-                          - 0x40   0x40
+  Section   Kind         Address    Size  Object
+  -------   ----         -------    ----  ------
+"A0":                              0x3c0
+  .intvec   ro code          0x0   0x3c0  startup_TM4C1294.o [1]
+                         - 0x3c0   0x3c0
 
-"P1":                              0x16
-  .text     ro code         0x40   0x14  asm.o [1]
-  .text     ro code         0x54    0x2  asm.o [1]
-                          - 0x56   0x16
+"P1":                              0x312
+  .text     ro code        0x3c0   0x310  asm.o [1]
+  .text     ro code        0x6d0     0x2  startup_TM4C1294.o [1]
+                         - 0x6d2   0x312
 
-"P2":                             0x400
-  CSTACK             0x2000'0000  0x400  <Block>
-    CSTACK  uninit   0x2000'0000  0x400  <Block tail>
-                   - 0x2000'0400  0x400
+"P2":                             0x8000
+  CSTACK             0x2000'0000  0x8000  <Block>
+    CSTACK  uninit   0x2000'0000  0x8000  <Block tail>
+                   - 0x2000'8000  0x8000
 
 Unused ranges:
 
          From           To      Size
          ----           --      ----
-         0x56     0x7'ffff  0x7'ffaa
-  0x2000'0400  0x2000'ffff    0xfc00
+        0x6d2     0xf'ffff  0xf'f92e
+  0x2000'8000  0x2003'ffff  0x3'8000
 
 
 
@@ -77,38 +78,43 @@ Unused ranges:
 *** MODULE SUMMARY
 ***
 
-    Module          ro code  rw data
-    ------          -------  -------
+    Module              ro code  rw data
+    ------              -------  -------
 command line/config:
-    --------------------------------
+    ------------------------------------
     Total:
 
 D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj: [1]
-    asm.o                86
-    --------------------------------
-    Total:               86
+    asm.o                   784
+    startup_TM4C1294.o      962
+    ------------------------------------
+    Total:                1'746
 
-    Linker created             1'024
-------------------------------------
-    Grand Total:         86    1'024
+    Linker created                32'768
+----------------------------------------
+    Grand Total:          1'746   32'768
 
 
 *******************************************************************************
 *** ENTRY LIST
 ***
 
-Entry                    Address  Size  Type      Object
------                    -------  ----  ----      ------
-CSTACK$$Base         0x2000'0000         --   Gb  - Linker created -
-CSTACK$$Limit        0x2000'0400         --   Gb  - Linker created -
-__iar_program_start         0x41        Code  Gb  asm.o [1]
-__vector_table               0x0        Data  Gb  asm.o [1]
+Entry                     Address  Size  Type      Object
+-----                     -------  ----  ----      ------
+CSTACK$$Base          0x2000'0000         --   Gb  - Linker created -
+CSTACK$$Limit         0x2000'8000         --   Gb  - Linker created -
+__Vectors                     0x0         --   Gb  startup_TM4C1294.o [1]
+__Vectors_End               0x3c0        Data  Gb  startup_TM4C1294.o [1]
+__Vectors_Size {Abs}        0x3c0         --   Gb  startup_TM4C1294.o [1]
+__iar_program_start         0x3c1        Code  Gb  asm.o [1]
+__vector_table                0x0        Data  Gb  startup_TM4C1294.o [1]
+__vector_table_0x1c          0x1c        Data  Gb  startup_TM4C1294.o [1]
 
 
 [1] = D:\Pietro\Micro\ELF52\Projects\asm_example\Debug\Obj
 
-     86 bytes of readonly  code memory
-  1'024 bytes of readwrite data memory
+   1'746 bytes of readonly  code memory
+  32'768 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

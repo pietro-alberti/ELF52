@@ -46,6 +46,9 @@
         <path>$WS_DIR$\Projects\load_store\load_store.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\Projects\Projeto_final\Projeto_final.ewp</path>
+    </project>
+    <project>
         <path>$WS_DIR$\Projects\uart\uart.ewp</path>
     </project>
     <project>
